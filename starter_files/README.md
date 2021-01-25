@@ -26,15 +26,15 @@ An Azure ML pipeline contain steps from data preparation to feature extraction t
 ![Deploy](azureml2_deploy.png)
 ![Endpoint](azureml2_endpoint.png)
 ![Endpoint logs](azureml2_endpoint_logs.png)
-![Swagger1](azureml2_swagger1.png)
-![Swagger2](azureml2_swagger2.png)
+![Swagger1](azureml2_endpoint_swagger1.png)
+![Swagger2](azureml2_endpoint_swagger2.png)
 ![Endpoint Results](azureml2_endpoint_results.png)
 ![Endpoint benchmark1](azureml2_endpoint_benchmark1.png)
 ![Endpoint benchmark2](azureml2_endpoint_benchmark2.png)
 
 ### Using Python SDK
 
-![Pipeline](azureml2_nb_pipelines.png)
+![Pipeline](azureml2_nb_pipelines.PNG)
 ![Pipeline Details](azureml2_nb_pipeline_details.png)
 ![Pipeline Dataset](azureml2_nb_dataset.png)
 ![Run Widget](azureml2_nb_runwidget.png)
