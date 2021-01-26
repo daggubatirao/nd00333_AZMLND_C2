@@ -19,16 +19,48 @@ An Azure ML pipeline contain steps from data preparation to feature extraction t
 ## Key Steps
 ### Using Machine Learning Studio
 
+Azure ML uses datasets to refer the data stored in datastore. The dataset can be created and peform data exploration before starting the Model development. Using Azurel ML studio, dataset can also be created during the AutoML configuration. The following screenshot shows the bank marketing dataset created during the AutoML configuration using Azure Machine learning Studio.
+
 ![Dataset](azureml2_dataset.png)
+
+Using Azure Machine Learning Studio, an AutoML experiement can be started by selcted the AutoML and then configuring the type of machnine leaning and the dataset.The following screen shot shows the AutoML run and its status.
+
 ![AzureML run](azureml2_run.png)
+
+The following screenshot shows the details of the AutoML experiment. The AutoML run identifies Votingensemble as the best algorith and the correspoding mertic (accuracy: 0.91806). 
+
 ![AzureML run summary](azureml2_run_summary.png)
+
+The following screenshot shows the details of the Voting Ensemble model run.
+
 ![Best Run](azureml2_bestrun.png)
+
+In Azure Machine Learning Studio, the best model can be deployed using the "Deploy" button on the model details of the above screenshot. Compute type and authentization can be configured during the deployment. The following screenshot shows the details of deploying a model.
+
 ![Deploy](azureml2_deploy.png)
+
+Once the model is deployed, a REST endpoint is available for consumption. The following screenshot shows the deployment during the trnasitioning phase of the deployment.
+
 ![Endpoint](azureml2_endpoint.png)
+
+The endpoints can be monitored using Python SDK. For example, the following screen shows a python script queries the logs of the endpoint. 
+
 ![Endpoint logs](azureml2_endpoint_logs.png)
+
+The REST endpoint can be inspected using swagger. Once the endpoint is deployed, Azure provides a Swagger JSON file, which can be used to host web server for metadata for the endpoint. The following screenshot shows Swagger UI showing details of the model.
+
 ![Swagger1](azureml2_endpoint_swagger1.png)
+
+Inspecting the methods on the Swagger UI shows the details of the web service methods and its request and response signatures.
+
 ![Swagger2](azureml2_endpoint_swagger2.png)
+
+The REST endpoints can be consumed using Python Code. The following screenshot shows the results of calling REST endpoint using Python code.
+
 ![Endpoint Results](azureml2_endpoint_results.png)
+
+The endpoints can be benchamrked using ApacheBench.The following two screenshots shows detail of an benchmarking test.
+
 ![Endpoint benchmark1](azureml2_endpoint_benchmark1.png)
 ![Endpoint benchmark2](azureml2_endpoint_benchmark2.png)
 
@@ -51,3 +83,4 @@ An Azure ML pipeline contain steps from data preparation to feature extraction t
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
