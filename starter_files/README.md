@@ -66,21 +66,42 @@ The endpoints can be benchamrked using ApacheBench.The following two screenshots
 
 ### Using Python SDK
 
-![Pipeline](azureml2_nb_pipelines.PNG)
-![Pipeline Details](azureml2_nb_pipeline_details.png)
-![Pipeline Dataset](azureml2_nb_dataset.png)
-![Run Widget](azureml2_nb_runwidget.png)
-![Run Widget Complete](azureml2_nb_runwidget_complete.png)
-![Pipeline Endpoint](azureml2_nb_endpoint.png)
-![Pipeline Endpoint Run](azureml2_nb_endpoint_run.png)
-![Pipeline Endpoint RunDetails](azureml2_nb_endpoint_rundetails.png)
-![Pipeline Endpoint Completed](azureml2_nb_endpoint_completed.png)
+Using Azure Notebooks, an AutoML experiement can be crated by submitting a pipeline with AutoML steps/ .The following screen shot shows the pipeline run and its status.
 
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+![Pipeline](azureml2_nb_pipelines.PNG)
+The details of the pipelines contains the steps in the pipeline. The Graph shows the steps the in the pipeline/
+![Pipeline Details](azureml2_nb_pipeline_details.png)
+
+Usning SDK, The datasets cab be created and registed with Azure ML. The following screenshot shows dataset created by the notebook.
+
+![Pipeline Dataset](azureml2_nb_dataset.png)
+
+After submitting the pipeline for run, RunDetails method shows the details of the run the notebook.
+
+![Run Widget](azureml2_nb_runwidget.png)
+
+By calling wait_for_completion method, the notebook waits for pipeline run to complete and shows the details of the run. The following screenshot shows a completed status.
+![Run Widget Complete](azureml2_nb_runwidget_complete.png)
+
+The pipeline can be published using SDK. The following screenshot shows the published endpoint.
+
+![Pipeline Endpoint](azureml2_nb_endpoint.png)
+
+The endpoint run can be examined in Azure Machine Learning Studio. The following screenshot shows the pipeline runs.
+![Pipeline Endpoint Run](azureml2_nb_endpoint_run.png)
+
+The following screenshot shows the details of the pipeline run.
+![Pipeline Endpoint RunDetails](azureml2_nb_endpoint_rundetails.png)
+
+The following screenshot shows the details of the pipeline run after completion.
+![Pipeline Endpoint Completed](azureml2_nb_endpoint_completed.png)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+The AutoML dataguard feature indicates that the data is imbalanced. the smallest class has 3692 rows where as the dataset contains 32950. Using undersampling or oversampling can improve the performance.
+
+Including deep learning models may provide better results.
+
 
