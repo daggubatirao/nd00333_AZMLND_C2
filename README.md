@@ -12,7 +12,7 @@ The dataset contains data about a marketing compaign of a bank. The label indica
 ## Architectural Diagram
 The lifecycle of a machine learning model involves data acquisition, data preparation, hypothesis and model development, model evaluation, model deployment, operations and optimization of the model. Azure Machine Learning uses DevOps based MLOps(Machine Learning Operations) approach for machine learning workflows. MLOps applies continuous integration, delivery and deployment to the machine learning process. 
 
-![Architecture](azureml2_arch.png)
+![Architecture](starter_files/azureml2_arch.png)
 
 An Azure ML pipeline contains steps from data preparation to feature extraction to hyperparameter tuning to model evaluation. The Azure ML pipelines can be built, deployed, and managed using Azure Machine Learning Studio UI. The Azure ML pipelines can be built, deployed, and managed using Azure ML SDK.
 
@@ -23,85 +23,85 @@ When a model has been deployed as a web service, the endpoint can be deployed on
 
 Azure ML uses datasets to refer to the data stored in a datastore. The dataset can be created and perform data exploration before starting the Model development. Using Azure ML studio, the dataset can also be created during the AutoML configuration. The following screenshot shows the bank marketing dataset created during the AutoML configuration using Azure Machine learning Studio.
 
-![Dataset](azureml2_dataset.png)
+![Dataset](starter_files/azureml2_dataset.png)
 
 Using Azure Machine Learning Studio, an AutoML experiment can be started by selecting the AutoML and then configuring the type of machine learning and the dataset. The following screenshot shows the AutoML run and its status.
 
-![AzureML run](azureml2_run.png)
+![AzureML run](starter_files/azureml2_run.png)
 
 The following screenshot shows the details of the AutoML experiment. The AutoML run identifies Votingensemble as the best algorithm and the corresponding metric (accuracy: 0.91806). 
 
-![AzureML run summary](azureml2_run_summary.png)
+![AzureML run summary](starter_files/azureml2_run_summary.png)
 
 The following screenshot shows the details of the Voting Ensemble model run.
 
-![Best Run](azureml2_bestrun.png)
+![Best Run](starter_files/azureml2_bestrun.png)
 
 In Azure Machine Learning Studio, the best model can be deployed using the "Deploy" button on the model details of the above screenshot. Compute type and authentication can be configured during the deployment. The following screenshot shows the details of deploying a model.
 
-![Deploy](azureml2_deploy.png)
+![Deploy](starter_files/azureml2_deploy.png)
 
 Once the model is deployed, a REST endpoint is available for consumption. The following screenshot shows the deployment during the transitioning phase of the deployment.
 
-![Endpoint](azureml2_endpoint.png)
+![Endpoint](starter_files/azureml2_endpoint.png)
 
 The endpoints can be monitored using Python SDK. For example, the following screen shows a python script that queries the logs of the endpoint. 
 
-![Endpoint logs](azureml2_endpoint_logs.png)
+![Endpoint logs](starter_files/azureml2_endpoint_logs.png)
 
 The REST endpoint can be inspected using swagger. Once the endpoint is deployed, Azure provides a Swagger JSON file, which can be used to host a web server for metadata for the endpoint. The following screenshot shows Swagger UI showing details of the model.
 
-![Swagger1](azureml2_endpoint_swagger1.png)
+![Swagger1](starter_files/azureml2_endpoint_swagger1.png)
 
 Inspecting the methods on the Swagger UI shows the details of the web service methods and their request and response signatures.
 
-![Swagger2](azureml2_endpoint_swagger2.png)
+![Swagger2](starter_files/azureml2_endpoint_swagger2.png)
 
 The REST endpoints can be consumed using Python Code. The following screenshot shows the results of calling REST endpoint using Python code.
 
-![Endpoint Results](azureml2_endpoint_results.png)
+![Endpoint Results](starter_files/azureml2_endpoint_results.png)
 
 The endpoints can be benchmarked using ApacheBench.The following two screenshots show the detail of a benchmarking test.
 
-![Endpoint benchmark1](azureml2_endpoint_benchmark1.png)
-![Endpoint benchmark2](azureml2_endpoint_benchmark2.png)
+![Endpoint benchmark1](starter_files/azureml2_endpoint_benchmark1.png)
+![Endpoint benchmark2](starter_files/azureml2_endpoint_benchmark2.png)
 
 ### Pipelines
 An Azure Machine learning pipeline is a workflow of machine learning tasks. Pipeline tasks are a series of steps. Pipelines contain re-usable pipeline steps. Machine Learning pipelines can be used to create and manage workflows. Using Azure Notebooks, an AutoML experiment can be created by submitting a pipeline with AutoML steps. The following screenshot shows the pipeline run and its status.
 
-![Pipeline](azureml2_nb_pipelines.PNG)
+![Pipeline](starter_files/azureml2_nb_pipelines.PNG)
 
 The details of the pipelines contain the steps in the pipeline. The Graph shows the steps in the pipeline.
 
-![Pipeline Details](azureml2_nb_pipeline_details.png)
+![Pipeline Details](starter_files/azureml2_nb_pipeline_details.png)
 
 Using SDK, The datasets can be created and registered with Azure ML. The following screenshot shows the dataset created by the notebook.
 
-![Pipeline Dataset](azureml2_nb_dataset.png)
+![Pipeline Dataset](starter_files/azureml2_nb_dataset.png)
 
 After submitting the pipeline for a run, the RunDetails method shows the details of the run in the notebook.
 
-![Run Widget](azureml2_nb_runwidget.png)
+![Run Widget](starter_files/azureml2_nb_runwidget.png)
 
 By calling the wait_for_completion method, the notebook waits for the pipeline run to completion and shows the details of the run. The following screenshot shows the run with completed status.
 
-![Run Widget Complete](azureml2_nb_runwidget_complete.png)
+![Run Widget Complete](starter_files/azureml2_nb_runwidget_complete.png)
 
 The pipeline can be published using SDK. The following screenshot shows the published endpoint.
 
-![Pipeline Endpoint](azureml2_nb_endpoint.png)
+![Pipeline Endpoint](starter_files/azureml2_nb_endpoint.png)
 
 The endpoint run can be examined in Azure Machine Learning Studio. The following screenshot shows the pipeline runs.
 
-![Pipeline Endpoint Run](azureml2_nb_endpoint_run.png)
+![Pipeline Endpoint Run](starter_files/azureml2_nb_endpoint_run.png)
 
 The following screenshot shows the details of the pipeline run.
 
-![Pipeline Endpoint RunDetails](azureml2_nb_endpoint_rundetails.png)
+![Pipeline Endpoint RunDetails](starter_files/azureml2_nb_endpoint_rundetails.png)
 
 The following screenshot shows the details of the pipeline run after completion.
 
-![Pipeline Endpoint Completed](azureml2_nb_endpoint_completed.png)
+![Pipeline Endpoint Completed](starter_files/azureml2_nb_endpoint_completed.png)
 
 ## Screen Recording
 [Screencast](https://drive.google.com/file/d/1Ii4pi57c_5zsQjwsldJLWN-ii6lhkofC/view?usp=sharing)
