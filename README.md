@@ -87,7 +87,11 @@ By calling the wait_for_completion method, the notebook waits for the pipeline r
 
 ![Run Widget Complete](starter_files/azureml2_nb_runwidget_complete.png)
 
-The pipeline can be published using SDK. The following screenshot shows the published endpoint.
+The pipeline can be published using SDK. The following screenshot shows the published pipoeline.
+
+![Pipeline Endpoint](starter_files/azureml2_nb_pipeline.png)
+
+The following screenshot shows the published endpoint.
 
 ![Pipeline Endpoint](starter_files/azureml2_nb_endpoint.png)
 
