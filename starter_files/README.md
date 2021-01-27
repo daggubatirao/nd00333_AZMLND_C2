@@ -104,7 +104,7 @@ The following screenshot shows the details of the pipeline run after completion.
 ![Pipeline Endpoint Completed](azureml2_nb_endpoint_completed.png)
 
 ## Screen Recording
-[Screencast](https://drive.google.com/file/d/1riQjMhj1zyspFVhP1IilghorXiw_A9uV/view?usp=sharing)
+[Screencast](https://drive.google.com/file/d/1VzQUzLSY2l8yQ7IuQ16XakmcNY982opQ/view?usp=sharing)
 
 
 ## Standout Suggestions
